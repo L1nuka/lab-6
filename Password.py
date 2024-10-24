@@ -19,9 +19,11 @@ if __name__ == '__main__':
         print("2. Decode")
         print("3. Quit")
         ans = int(input("Please enter an option: "))
+        
         if ans == 1:
             data = encode(input("Please enter your password to encode: "))
             print("Your password has been encoded and stored!")
+
         if ans == 2:
             print(f"The encoded password is {data}, and the original password is {decode(data)}")
             
