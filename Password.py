@@ -8,7 +8,15 @@ def encode(oldPass):
         else:
             newPass += str(int(x) + 3)
     return newPass
-
+# Amir Amritt decode
+def decode(encodedPass):
+    originalPass = ""
+    for x in encodedPass:
+        if int(x) > 6:
+            originalPass += str(int(x) + 7)
+        else:
+            originalPass += str(int(x) - 3)
+    return originalPass
 if __name__ == '__main__':
     ans = 0
     data = ""
